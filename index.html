@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CV Rahmanda Alif Kurniawan</title>
+	<link rel="icon" href="favicon.ico">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="left-container">
+		<div class="photo-contact">
+			 <img src="96889346_p0_master1200.jpg" class="photo">
+			 <h1>Contact Me:</h1>
+			 <a href="mailto:rahmandaalif9@gmail.com">
+			 <button class="contact-button"><span class="warna-button">Email</span></button>
+			</a>
+			<a onclick="window.open('https://wa.link/mj6e07');"> <!--href="https://wa.link/mj6e07" target="_blank"-->
+			 <button class="contact-button">WhatsApp</button>
+			</a>
+		</div>
+	</div>
+
+	<div class="right-container">
+		<div class="top-bar">
+		<a href="" class="title">Tugas Sistem Basis Data</a>
+			<div class="list-menu">
+				<a href="#About" class="menu" >Entitas</a>
+				<a href="#Experience" class="menu" >Atribut</a>
+				<a href="#contact" class="menu" >contact</a>
+			</div>
+		</div>
+
+		<div id="profile">
+			<h1>Rahmanda Alif Kurniawan</h1><br>
+			<h2><strong>ERD</strong></h2>
+			<p>Erd atau Entity Relationship Diagram adalah suatu bentuk diagram yang menjelaskan hubungan antar objek – objek data yang mempunyai hubungan antar relasi </p>
+
+			<h2>Tahapan Merancang ERD</h2>
+			<ol>
+		<li>Menentukan entitas </li>
+		<li>Menentukan Atribut yang termasuk atribut kunci</li>
+		<li>Identifikasi relasi</li>
+		<li>Menentukan kardinalitas</li>
+		</ol>
+
+		<h2>Studi kasus : ERD Tentang Penjualan Barang Online</h2>
+		<p>ERD Penjual merupakan aktifitas menjual produk, bisa berupa barang ataupun jasa. Aktifitas ini di lakukan oleh dua pihak yakni penjual dan pembeli. Pada studi kasus kali ini kita akan coba membuat perancangan basis data menggunakan pemodelan</p>
+
+		<p>Aturan</p>
+			<ol>
+		<li>Seorang penjual dapat menjual banyak barang</li>
+		<li>Seorang pembeli dapat membeli lebih dari satu barang yang dijual penjual</li>
+		<li>Stok barang akan berkurang sesuai jumlah barang yang dibeli</li>
+		<li>Penjual, pembeli, dan barang dapat diidentifikasi dengan id yang berbeda(unik)</li>
+		</ol>
+
+		<div id="About">
+			<h2>Tahapan 1 : Menentukan Entitas</h2>
+			<ul><li>penjual, barang, pembeli</li></ul>
+		</div>
+
+		<div id="Experience">
+			<h2>Tahapan 2 : Menentukan Atribut</h2>
+
+			<ul><h4>Penjual</h4><li>Id_Penjual : integer(pk)</li>
+				<li>Nama_Penjual : string</li>
+				<li>Email : string</li>
+				<li>No_telp : string</li>
+			</ul>
+
+			<ul><h4>Barang</h4><li>Id_Pembeli : integer(pk)</li>
+				<li>Nama_Barang : string</li>
+				<li>Harga : integer</li>
+				<li>Stok : integer</li>
+			</ul>
+
+			<ul><h4>Pembeli</h4><li>Id_Pembeli : integer(pk)</li>
+				<li>Nama_Pembeli : string</li>
+				<li>Alamat : integer</li>
+				<li>Email : integer</li>
+			</ul>
+
+
+		</div>
+
+		<div id="achivements">
+			<h2>Tahapan 3 : Menentukan Relasi dan Kardinalitas</h2>
+			<li>Kardinalitas relasi antara penjual dan barang adalah <mark>one to many</mark> karena seorang penjual dapat menjual banyak barang atau banyak barang dapat dijual oleh seorang penjual</li>
+
+			<li>Kardinalitas relasi antara pembeli dan barang adalah <mark>one to many</mark> karena seorang pembeli dapat membeli banyak barang atau dengan kata lain banyak barang boleh dibeli oleh seorang pembeli</li>
+
+
+		</div>
+
+		<div id="contact">
+			<h2>Entity Relationship Diagram</h2>
+			<img src="erd.jpg" width="1000px"><br>
+
+
+		<div>
+			<h2>Contact</h2>
+			<b><p>Phone   : +6285694944616</p></b>
+			<b><p>Email   : rahmandaalif9@gmail.com</p></b>
+			<b><p>Address : JL Bonjol, Bekasi Selatan</p></b>
+
+		</div>
+
+		<div id="footer">
+				<h4>@ 2022 by Rahmanda Alif Kurniawan</h4>
+		</div>
+
+
+
+	</div>
+
+
+
+</body>
+</html>
